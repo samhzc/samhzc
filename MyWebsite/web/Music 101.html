@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project: Music 101</title>
+    <style>
+        @import "./css&js/general.css";
+    </style>
+    <link rel="stylesheet" href="css&js/general.css">
+</head>
+<body>
+
+<button id="back-to-top">Back to Top</button>
+
+<div style="clear: both; display: flex; padding: 0; margin: 0; border: none">
+    <div style="width: 20%">
+        <img content="logo" src="img/img_placeholder.png" alt="placeholder" style="width: 100%" height="200">
+    </div>
+    <div style="width: 80%">
+        <img content="mydesign" src="img/img_placeholder.png" alt="placeholder" style="width: 100%" height="200">
+    </div>
+</div>
+<div class="navitem">
+    <ul class="nav">
+        <li><a href="HomePage.html">Home</a></li>
+        <li><a href="Project Website.html">My Website</a></li>
+        <li><a href="Artificial Eye.html">Artificial Eye</a></li>
+        <li><a href="Employment Data Physicalization.html">Employment Data Physicalization</a></li>
+        <li class="nav-active"><a href="Music 101.html">Music 101</a></li>
+        <li><a href="Party Finder.html">Party Finder</a></li>
+    </ul>
+</div>
+
+<div class="border_layout">
+    <div class="text_headings">Music 101</div>
+    <div class="text_subheadings">Aim and Purpose</div>
+    <div>Music composition is often considered a challenging task for many people due to the complex musical concepts and technical skills required. To address this challenge, we have designed and implemented a Creativity Support Tool (CST) called “Music 101” using an Arduino Uno circuit board. The main goal of this CST is to provide a user-friendly platform that enables users to compose a short musical sequence by simply pressing buttons on an IR remote. The tool uses a buzzer to produce sound of specific notes and a LCD screen to display the notes being played. This report presents the design and implementation of Music 101 and evaluates its effectiveness in supporting music composition for novice users. The purpose of this CST is to simplify the process of music composition and make it accessible to a wider audience with varying levels of musical expertise. The Music 101 CST offers a new opportunity for people to explore their musical creativity and develop their musical skills in a fun and engaging way.</div>
+    <div class="text_subheadings">Motivation</div>
+    <div>As an undergraduate student, building a CST like “Music 101” can offer several motivations. For me, this project provides an opportunity to learn new skills and gain hands-on experience in electronics, programming, and prototyping. It also allows me to express my creativity through music composition and explore the possibilities of using technology to support artistic expression. Moreover, this project can help me develop problem-solving skills that can be applied in various fields. For others, this project provides a simple and accessible way for anyone to create their own musical piece, without needing to have any formal training or access to musical instruments. I found the idea of being able to create music intuitively and spontaneously, at any time and in any place is very useful and very much needed in our society.</div>
+    <div class="text_subheadings">Related Works</div>
+    <div>As a student who has created a music application using Arduino Uno 3 and Tone code to play specific notes based on input from an IR remote, I have researched various related projects in the field of music and microcontroller-based applications.</div>
+    <div class="text_stepheadings">Related Work 1</div>
+    <div>Among the commercial projects that have inspired my work is the Teenage Engineering OP-1 [1], a popular portable synthesizer and sampler that offers a wide range of features for sound creation and manipulation. The device has a compact design and features a color display and a range of knobs and buttons for hands-on control. Additionally, the Korg Volca series of synthesizers offers a range of synthesis types and effects, as well as built-in sequencers and arpeggiators.</div>
+    <img src="img/Music%20101/p1.png" width="400" height="200" alt="p1">
+    <div>Figure 1: Teenage Engineering. (n.d.). OP-1 Portable Synthesizer & Sampler. Retrieved April 2, 2023 <a class="link" href="https://teenage.engineering/store/op-1/">(https://teenage.engineering/store/op-1/)</a></div>
+    <div class="text_stepheadings">Related Work 2 & 3</div>
+    <div>In the academic realm, the “Musical Machine Learning” project developed by the MIT Media Lab [3] caught my attention as it explores the use of machine learning algorithms to create new types of music and sound. The project involves training machine learning models on large datasets of music and using these models to generate new compositions. The team behind the project has also developed a web-based tool called “AIVA” that allows users to create their own AI-generated music. Another academic example is the “Musical Glove” project developed by researchers at the University of California, San Diego [2], which involves creating a glove with sensors that can detect the movements of the wearer’s fingers. These movements are then translated into sound using a custom-built software program.</div>
+    <img src="img/Music%20101/p2.png" width="400" height="360" alt="p2">
+    <div>Figure 2: Schematic representation of the neural network architecture used for music generation. Adapted from “Music Generation With Deep Learning” by Huang et al., 2018 [4]. Available under the Creative Commons Attribution License (CC BY). <a class="link" href="https://www.frontiersin.org/articles/10.3389/frai.2020.00006/full">(https://www.frontiersin.org/articles/10.3389/frai.2020.00006/full)</a></div>
+    <img src="img/Music%20101/p3.png" width="400" height="300" alt="p3">
+    <div>Figure 3: Lau, C., Wang, Y., Chen, R., Chen, Y., & Zhang, T. (2018). The musical glove: An innovative wireless sensor device for hand rehabilitation. Journal of Hand Therapy, 31[2], 201–209[2]. <a class="link" href="https://www.sciencedirect.com/science/article/abs/pii/S0894113018303521">(https://www.sciencedirect.com/science/article/abs/pii/S0894113018303521)</a> </div>
+    <div class="text_stepheadings">Related Work 4</div>
+    <div>One example of a project that uses microcontrollers to create interactive music experiences is the “Arduino Musical Instrument with Light Theremin” developed by Tdelatorre on ProjectHub [4]. In this project, an Arduino Uno is used along with a breadboard and various components such as a photoresistor and an LED to create a musical instrument that can be played by waving a hand over the photoresistor. The Arduino code reads the analog input from the photoresistor and maps it to a frequency for the tone generator. The LED is also controlled by the Arduino code to provide visual feedback.</div>
+    <img src="img/Music%20101/p4.png" width="400" height="330" alt="p4">
+    <div>Figure 4 :Theremino: a theremin made with Arduino[4] <a class="link" href="https://www.hackster.io/413422/theremino-a-theremin-made-with-arduino-8631c6">(https://www.hackster.io/413422/theremino-a-theremin-made-with-arduino-8631c6)</a> </div>
+    <div class="text_stepheadings">Related Work 5</div>
+    <div>Another one example of a project that uses microcontrollers to create interactive music experiences is the “Ultrasonic Piano” developed by Linndz [5]. This project involves using an ultrasonic sensor to detect the distance between the user’s hand and the sensor, and then mapping that distance to different notes on a piano. The project uses an Arduino Uno board and a breadboard, along with various components such as the ultrasonic sensor and piezoelectric speakers. The Arduino code reads the distance measured by the sensor and converts it into a corresponding frequency to generate the appropriate note on the piano. The project also includes a potentiometer to control the volume of the sound output. Overall, the Ultrasonic Piano is a unique and creative way to use microcontrollers to create an interactive musical experience.</div>
+    <img src="img/Music%20101/p5.png" width="400" height="220" alt="p5">
+    <div>Figure 5 :”Ultrasonic Piano” by Linndz.[5] <a class="link" href="https://linndz.com/project/image/piano/prototype_final.jpg">(https://linndz.com/project/image/piano/prototype_final.jpg)</a></div><br>
+    <div>By examining these and other related projects, I have gained a deeper understanding of the possibilities and limitations of microcontroller-based music applications. I have also discovered new techniques and tools that can be used to create more sophisticated and engaging music applications, which I hope to apply in my future projects.</div>
+    <div class="text_subheadings">Design Fiction </div>
+    <div>Design Fiction is like telling stories about what could happen in the future due to new tech and how society changes. In our stories, we're looking at two cool music gadgets – Music 101 and Music 2050. Imagine a future where music isn't just about beats but helps you figure yourself out and connects with others emotionally. These stories explore how these gadgets shake up the music world, making it a ride full of creativity, emotions, and maybe even a bit of a revolution. So, let's dive in and see how these tools might change art, culture, and how we experience being human.</div>
+    <div class="text_stepheadings">Fiction 1</div>
+    <div>In a spiritual future, where the concept of property and money seems stopped to exist. Instead of searching outwards into the world to realize self-worthiness, people started searching inwards into the mental world. In the year 2123, John Echo was born into a family of musicians. John Echo grew up surrounded by music, and he inherited his family’s love for the art. However, he struggled to compose his own pieces. He found it hard to translate the melodies he heard in his head into music notes on paper. One day, John stumbled upon an old Arduino Uno circuit board in a thrift store. Intrigued by the possibilities, he bought it and began to experiment. With the help of some online tutorials, he built a simple tool that he called “Music 101.” As he played around with the tool, John realized that it was helping him to overcome his creative blocks. He could use the IR remote to play notes and create short musical sequences, and the LCD screen would display the notes he was playing. He even added a feature that would allow him to record and play back his compositions. John shared his invention with his friends and fellow musicians, and they were amazed. Soon, word spread, and people from all over the world started to use Music 101 to compose their own music. As more and more people started to use Music 101, a new genre of music began to emerge. It was called “Circuit Music,” and it was unlike anything anyone had ever heard before. The music was experimental, free-form, and deeply personal. It spoke to the emotions and inner lives of its creators, and it was quickly embraced by a growing community of artists and listeners. In the year 2223, Music 101 had evolved into a sophisticated AI-powered tool that could analyze a user’s brainwaves and generate music based on their thoughts and emotions. People no longer needed to know how to play an instrument or read music to create beautiful compositions. All they had to do was think, and Music 101 would do the rest. John Echo had passed away long ago, but his legacy lived on. He was remembered as the father of Circuit Music, and his invention had changed the course of music history forever.</div>
+    <div class="text_stepheadings">Fiction 2</div>
+    <div>In the year 2050, the world has become a much different place. Climate change had ravaged the planet, and many parts of the world were uninhabitable. In the midst of this chaos, people had turned to music as a source of solace and inspiration. A group of researchers and musicians had come together to create a new tool that could help people to connect with music in a deeper way. They called it “Music 2050,” and it was based on the original Music 101 circuit board. Music 2050 was a sleek, handheld device that could generate complex musical compositions with just the touch of a button. It had a built-in AI system that could analyze a user’s mood and create music that matched their emotional state. Users could also input their own musical ideas using a touch screen interface. The device was a hit, and soon it became the go-to tool for musicians and music lovers around the world. People used Music 2050 to create beautiful soundscapes that reflected their innermost thoughts and feelings. They shared their compositions on social media, and a new genre of music emerged that was based on the use of the device. The researchers behind Music 2050 were amazed at the impact that their invention had on the world. They had never imagined that a simple circuit board could bring so much joy and healing to people in a time of crisis. As the years passed, Music 2050 continued to evolve. It became smaller, more powerful, and more intuitive to use. It became a symbol of hope and creativity in a world that desperately needed both.</div>
+    <div class="text_subheadings">Prototype design and implementation</div>
+    <div>The following parts should be prepared in advance:</div>
+    <ul class="list_items">
+        <li>UNO R3 Controller Board  x1</li>
+        <li>USB Cable x1</li>
+        <li>Buzzer x1</li>
+        <li>LCD 1602 Module x1</li>
+        <li>Potentiometer x1</li>
+        <li>Breadboard x1</li>
+        <li>Female-to-Male x1</li>
+        <li>Breadboard Jumper Wire x25</li>
+        <li>9V Battery with Snap-on Connector Clip x1</li>
+        <li>Resistor x5</li>
+    </ul>
+    <div class="text_stepheadings">Step 1: Add a buzzer to Your Circuit</div>
+    <img src="img/Music%20101/p6.png" width="600" height="380" alt="p6">
+    <ul class="list_steps">
+        <li>Connect buzzer’s short leg(-) connect to ground(GND) by black wire</li>
+        <li>Connect buzeer’s long leg(+) connect to any digital number on the UNO R3 Controller Board by red wire</li>
+    </ul>
+    <div class="text_stepheadings">Step 2 : Add a Potentiometer to Your Circuit</div>
+    <img src="img/Music%20101/p7.png" width="600" height="380" alt="p7">
+    <ul class="list_steps">
+        <li>Connect one terminal of the potentiometer to 5V (VCC) using a red wire.</li>
+        <li>Connect the other terminal of the potentiometer to ground (GND) using a black wire.</li>
+        <li>Connect the middle terminal of the potentiometer to A2 on the UNO R3 controller board using a purple wire.</li>
+    </ul>
+    <div class="text_stepheadings">Step 3:Add the LCD Screen to Your Circuit</div>
+    <img src="img/Music%20101/p8.png" width="600" height="380" alt="p8">
+    <ul class="list_steps">
+        <li>Connect the positive (anode) lead of the LCD to a resistor.</li>
+        <li>Connect the other end of the resistor to 5V (VCC) on the breadboard using a red wire.</li>
+        <li>Connect the negative (cathode) lead of the LCD to ground (GND) on the breadboard using a black wire.</li>
+        <li>Connect the contrast (V0) pin on the LCD display to a potentiometer.</li>
+        <li>Connect the R5 pin on the LCD display to analog pin 5 (A5) on the UNO R3 controller board.</li>
+        <li>Connect the Enable (E) pin on the LCD display to analog pin 4 (A4) on the UNO R3 controller board.</li>
+        <li>Connect the DB4 pin on the LCD display to digital pin 6 on the UNO R3 controller board.</li>
+        <li>Connect the DB5 pin on the LCD display to digital pin 7 on the UNO R3 controller board.</li>
+        <li>Connect the DB6 pin on the LCD display to digital pin 8 on the UNO R3 controller board.</li>
+        <li>Connect the DB7 pin on the LCD display to digital pin 9 on the UNO R3 controller board.</li>
+        <li>Connect the GND pin on the LCD display to ground (GND) on the breadboard using a black wire.</li>
+        <li>Connect the ACC pin on the LCD display to 5V (VCC) on the breadboard using a red wire.</li>
+    </ul>
+    <div>TIPs:</div>
+    <div>To turn on the LCD screen, use a potentiometer. Adjust the potentiometer to turn up the LCD screen. Once the LCD screen is turned on, you should see the text print out.</div>
+    <div class="text_stepheadings">Step 4: Connect the IR Receiver Module</div>
+    <img src="img/Music%20101/p9.png" width="600" height="380" alt="p9">
+    <ul class="list_steps">
+        <li>Connect G of IR Receiver Module to Breadboard Ground.</li>
+        <li>Connect R of IR Receiver Module to Breadboard Power.</li>
+        <li>Connect Y of IR Receiver Module to Master Uno Board register 13.</li>
+    </ul>
+    <div class="text_stepheadings">Step 5: Completed Prototype</div>
+    <div>Images below show the completed prototype for this project.</div>
+    <img src="img/Music%20101/p10.png" width="500" height="380" alt="p10">
+    <img src="img/Music%20101/p11.png" width="500" height="380" alt="p11">
+    <div>Click <a class="link" href="https://docs.google.com/document/d/12svwGJ7TI4EUXcJstSFNo-oBk_A_PE_pxCD8RdP3wzM/edit?pli=1">Link to the codes</a> to see the code for this project.</div>
+    <div class="text_subheadings">Electronics Choice & Code Logic</div>
+    <div>The IR sensor was used to receive signals from an IR remote, which was selected for its simplicity and user-friendly interface. The buzzer was used to produce the sound of the specific note, while the LCD screen was selected to show the note being played. The code logic developed for the project was motivated by the need to produce sound and display the note being played on the LCD screen when a button on the IR remote is pressed, allowing the user to keep track of the notes played and form a short musical sequence.</div>
+    <div class="text_subheadings">Accomplish the Creative Task</div>
+    <div>To accomplish the creative task of composing a musical piece, the user needs to press the buttons on the IR remote to produce the desired notes, which will be displayed on the LCD screen. The user can keep track of the notes played and form a short musical sequence. The project provides a simple and fun way for users to experiment with music composition, particularly for beginners or those looking for a creativity support tool.</div>
+    <div class="text_subheadings">Critique</div>
+    <div>This is a self-evaluated strength and limitations of this project.</div>
+    <div class="text_stepheadings">Strength</div>
+    <div>The Music 101 prototype developed using an Arduino Uno circuit board has several strengths and limitations. One of the main strengths is that it provides an easy and interactive way for users to create short musical sequences by pressing buttons on a remote control. The LCD screen displays the note being played, and the buzzer produces sound of different notes based on the button pressed. The code is well-organized and easy to understand, making it accessible for beginners in electronics and programming.</div>
+    <div class="text_stepheadings">Limitations</div>
+    <div>However, the prototype also has some limitations. The musical sequences that can be created are limited to the specific notes pre-programmed in the code, and there is no option to adjust the duration or timing of the notes played. Additionally, the use of an IR remote control limits the range of control and may require line-of-sight communication. The use of a single buzzer also limits the ability to create complex musical pieces with multiple notes and harmonies. Overall, the Music 101 prototype is a good starting point for those interested in exploring the intersection of electronics and music, but it has limitations that may make it unsuitable for more advanced musical applications.</div>
+    <div class="text_subheadings">Future work</div>
+    <div>Music 101 is an exciting project that has the potential to revolutionize the way people create and play music. However, there are several ways in which the project could be extended and improved to provide even greater functionality and usability. One direction in which Music 101 could be expanded is by adding more functionality to the remote control. Right now the remote control allows the user to select pre-programmed musical sequences. However, additional buttons could be added to allow the user to adjust the tempo or to select different instruments or change the volume. This would enable users to experiment with different sounds and create more complex musical compositions. Another potential direction for the project is to incorporate machine learning techniques. This requires a lot more knowledge on programming languages and algorithms. By analyzing user input and musical patterns, the tool could generate its own musical sequences. This would allow people to collaborate with the tool and create new musical works that they may not have thought of on their own. Also, this tool could be connected to a computer or other external device, allowing for more advanced musical composition and production. Improvements could also be made to the user interface. Adding a touch screen or other input method would make the tool more intuitive and user-friendly. Users could easily select and manipulate different sounds, adjust the tempo, and control other aspects of the tool’s functionality. Most importantly, this prototype could be miniaturized to create a more portable and user-friendly tool for users on the go. This would allow users to take the tool with them wherever they go, enabling them to create and play music anywhere and at any time. There are numerous ways in which the Music 101 project could be extended and improved to provide even greater functionality and usability for users. Incorporating machine learning techniques, adding more functionality to the remote control, improving the user interface, and miniaturizing the prototype are just a few possible ways for future development. With continued innovation and development, the Music 101 project has the potential to transform the way people create and perform music.</div>
+    <div class="text_subheadings">Project Video</div>
+    <video controls="controls" src="video/Music%20101%20Video.mp4" width="800" height="600">Your browser does not support this Video.</video>
+    <div class="text_subheadings">References</div>
+    <ul class="list_items">
+        <li>Teenage Engineering. (n.d.). OP-1 Portable Synthesizer & Sampler. Retrieved April 2, 2023. [Online]. Available:<a class="link" href="https://teenage.engineering/products/op-1">https://teenage.engineering/products/op-1</a></li>
+        <li>Lau, C., Wang, Y., Chen, R., Chen, Y., & Zhang, T. (2018). The musical glove: An innovative wireless sensor device for hand rehabilitation. Journal of Hand Therapy, 31(2), 201–209. [Online]. Available:<a class="link" href="https://www.jhandtherapy.org/article/S0894-1130(17)30076-5/fulltext">https://www.jhandtherapy.org/article/S0894-1130(17)30076-5/fulltext</a></li>
+        <li>Huang, C., Vasconcelos, N., & Ellis, D. P. W. (2020). Music generation with deep learning. Frontiers in Artificial Intelligence, 3, 6. [Online]. Available:<a class="link" href="https://www.frontiersin.org/articles/10.3389/frai.2020.00006/full">https://www.frontiersin.org/articles/10.3389/frai.2020.00006/full</a></li>
+        <li>“Arduino Music Instrument Using an IR Remote Control” [Online]. Available:<a class="link" href="https://projecthub.arduino.cc/tdelatorre/theremino-a-theremin-made-with-arduino-3e661f">https://projecthub.arduino.cc/tdelatorre/theremino-a-theremin-made-with-arduino-3e661f</a></li>
+        <li>“Ultrasonic Piano” by Linndz. [Online]. Available:<a class="link" href="https://linndz.com/project/ultrasonic-piano.html">https://linndz.com/project/ultrasonic-piano.html</a></li>
+    </ul>
+
+    <div class="text_subheadings">TeamWork Document</div>
+    <div>ZHICHENG(SAM) HUANG</div>
+    <ul class="list_items">
+        <li>Make video</li>
+        <li>Project document</li>
+        <li>Craft physical objects</li>
+        <li>Coded the IR receiver module and IR remote control</li>
+        <li>Coded the communication between remote and LCD screen</li>
+    </ul>
+    <div>SHAN(NORMAN) JIANG</div>
+    <ul class="list_items">
+        <li>TinkerCAD</li>
+        <li>Project document</li>
+        <li>Build the circuit for IR receiver module</li>
+        <li>Build the circuit for Potentiometer and LCD1602 screen</li>
+    </ul>
+</div>
+
+<script src="css&js/general.js"></script>
+</body>
+</html>

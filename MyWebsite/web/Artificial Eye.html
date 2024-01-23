@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project: Artificial Eye</title>
+    <style>
+        @import "./css&js/general.css";
+    </style>
+    <link rel="stylesheet" href="css&js/general.css">
+</head>
+<body>
+<button id="back-to-top">Back to Top</button>
+<div style="clear: both; display: flex; padding: 0; margin: 0; border: none">
+    <div style="width: 20%">
+        <img content="logo" src="img/img_placeholder.png" alt="placeholder" style="width: 100%" height="200">
+    </div>
+    <div style="width: 80%">
+        <img content="mydesign" src="img/img_placeholder.png" alt="placeholder" style="width: 100%" height="200">
+    </div>
+</div>
+<div class="navitem">
+    <ul class="nav">
+        <li><a href="HomePage.html">Home</a></li>
+        <li><a href="Project Website.html">My Website</a></li>
+        <li class="nav-active"><a href="Artificial Eye.html">Artificial Eye</a></li>
+        <li><a href="Employment Data Physicalization.html">Employment Data Physicalization</a></li>
+        <li><a href="Music 101.html">Music 101</a></li>
+        <li><a href="Party Finder.html">Party Finder</a></li>
+    </ul>
+</div>
+
+<div class="border_layout">
+    <div class="text_headings">Project: Artificial Eye</div>
+    <div class="text_subheadings">Aim and Purpose</div>
+    <div>Machines have become indispensable in the world we live in now, and it will be even more so in the future. CST, a creativity support tool, plays a big part in our daily life. Every CST is aiming for the same goal – to help humans to complete any creative task in every possible way, thus I designed a CST prototype called the Artificial Eye. The main purpose of this CST is to help visually impaired people to sense and measure their surroundings in a different and effective way and then to be able to build any kinds of kennels or catteries within the size of 2 meters for small animals such as dogs, cats, or chickens, etc.</div>
+    <div class="text_subheadings">Motivation</div>
+    <div>Safety is one of the most important sensations for every living creature in this world, including humans. There are lots of factors which could cause humans to feel safe or unsafe, the perception of the current environment is one of the main factors. “Compared to people with normal vision, those with vision impairment are at a higher risk for depression, anxiety, and other psychological problems <a class="link" href="https://www.ncbi.nlm.nih.gov/books/NBK402367/#">(Kempen et al., 2012)</a>.” As this research reported, people who are visually impaired have more restrictions in their daily lives, thus I wish to design something that can reduce those restrictions and allow them to live safer, more comfortably and most importantly with the ability to be creative. The visually impaired people will be able to have a better grasp of information around them through the Artificial Eye, in which they will feel more confident, safer, decrease the possibility of encountering dangerous situations and increase in mental health. By giving them more safety and confidence, they could be more encouraged to express their ideas by creating something on their own. Can you imagine how many more inspirations, new concepts and wonderful ideas could be brought to the world if every visually impaired person had the ability to build and create everything as the same as non-visually impaired people? What if someone has strong imagination skills and plenty of creative ideas but has no way to show or express correctly to others just because that person can not see? I would not see all those talents gone wasted, thus the Artificial Eye I designed is not just for visually impaired individuals to be able to create, but also for the world to be more colorful and a better place which includes as many ideas, innovations from everyone in the world as it can.</div>
+    <div class="text_subheadings">How does the Artificial Eye work</div>
+    <div>The Artificial Eye is a wearable CST that can be worn on the hand. It emits ultrasonic waves to the desired direction with real time feedback which determines if there are objects in that direction. The feedback is received by the user in the form of different intensities of vibration according to the distance. By sensing that vibration, the user could know the estimated distance from the object without being able to see and then perform different actions when doing a creative job. For example, if the person is building a small house for the dog. He/she can use this tool to measure and estimate the distance that can not be reached or measured by arm, like the length between two walls of the dog house or the height from the roof to the floor. There are 3 levels to the vibration, the intensity of first level vibration is the strong and it is active if the feedback distance is within one meter; the intensity of the second level vibration is weak and it is active if the feedback distance is within the range of one meter to two meters; the vibration will stop when it reaches to third level which the feedback range is greater than two meters. This CST could help visually impaired people to accurately estimate one meter and two meters, then they can roughly estimate (with greater accuracy than estimating without this CST) any other distance within two meters range.</div><br>
+    <div class="text_subheadings">Building the Artificial Eye</div>
+    <div>Before starting to build the Artificial Eye, make sure you have following components prepared:</div>
+
+    <ul class="list_items">
+        <li>UNO R3 Controller Board x 1</li>
+        <li>830 Tie-Point Breadboard x 1</li>
+        <li>Servo Motor SG90 x 1</li>
+        <li>Ultrasonic Sensor x 1</li>
+        <li>USB Cable x 1</li>
+        <li>Female-to-Male Dupont Wire x 8</li>
+        <li>Breadboard Jumper Wire x 12</li>
+        <li>9V Battery with Snap-on Connector Clip x 1</li>
+    </ul>
+
+    <div class="text_stepheadings">Step 1: Assemble the Controller Board with the Breadboard</div>
+    <div>Connect the controller board with the breadboard as shown in the image below. Connect one spot from the first row with the red line next to it which shows the + sign to the ground(GND) slot on the controller board and one spot from the second row with the blue line next to it which shows the – sign to the 5V power slot on the controller board.</div>
+    <img src="img/Artificial%20Eye%20img/p1.jpg" alt="p1" width="666" height="400">
+    <div class="text_stepheadings">Step 2: Connect the Ultrasonic Device</div>
+    <div>For this step, we have to connect some wires first for preparation.</div>
+    <div>For my design, I choose register 10 for ultrasonic sensor echo and register 9 for trig. You can also use other registers, just keep in mind to change the code for it. Connect the registers from the controller board to the breadboard as shown in the image below.</div>
+    <div>Also do not forget to connect the power supply and ground.</div>
+    <img src="img/Artificial%20Eye%20img/p2.jpg" alt="p2" width="666" height="400">
+    <div>Then pair up and connect eight female-to-male dupont wires to make the wires even longer as shown in the image below.</div>
+    <img src="img/Artificial%20Eye%20img/p3.jpg" alt="p3" width="666" height="400">
+    <div>Connect four extended dupont wires to four metal tips of the ultrasonic sensor as shown in the image below.</div>
+    <img src="img/Artificial%20Eye%20img/p4.jpg" alt="p4" width="666" height="400">
+    <div>Connect the other end of the four dupont wires accordingly to the breadboard as shown in the image below.</div>
+    <img src="img/Artificial%20Eye%20img/p5.jpg" alt="p5" width="666" height="400">
+    <div>After this step, the ultrasonic sensor should be ready to use.</div>
+    <div class="text_stepheadings">Step 3: Connect the Servo Motor</div>
+    <div>There are a few preparations that must be done too for this step.</div>
+    <div>The register I chose for the servo motor is register 8, as well, you can choose other registers but be sure to make the change in the code. Similarly, we first connect the power supply and ground and register we have chosen to the correct slots on the breadboard as shown in the image below.</div>
+    <img src="img/Artificial%20Eye%20img/p6.jpg" alt="p6" width="666" height="400">
+    <div>Then connect three jumper wires to each slot on the servo motor’s extended wires. As shown in the image below, the connections must be made from left slot to right slot are register, power supply and ground respectively.</div>
+    <img src="img/Artificial%20Eye%20img/p7.jpg" alt="p7" width="666" height="400">
+    <div>After that connect the other end of the three jumper wires to the correct places on the breadboard as shown in the image below.</div>
+    <img src="img/Artificial%20Eye%20img/p8.jpg" alt="p8" width="666" height="400">
+    <div>After this step, the servo motor should be ready to use.</div>
+    <div class="text_stepheadings">Step 4: Coding</div>
+    <div>You can access the entire code of this project by clicking <a class="link" href="https://docs.google.com/document/d/1He8Rrkf7uRdrp6VA2l-ruxN_yIvYsS9xLlWMx-quNms/edit">Code for the Artificial Eye project</a>.</div>
+    <div>In case the link does not work, the images below also show the entire code of this project.</div>
+    <img src="img/Artificial%20Eye%20img/p9.png" alt="p9" width="683" height="826">
+    <img src="img/Artificial%20Eye%20img/p10.png" alt="p10" width="683" height="826">
+    <div>If you choose different registers for the motor and the sensor, make sure to change the part of the code shown in the image below accordingly.</div>
+    <img src="img/Artificial%20Eye%20img/p11.jpg" alt="p11" width="683" height="139">
+    <div>Let’s now look at the different parts of the code with more detail. </div>
+    <div>The codes below are simply setup code for the servo motor and the ultrasonic sensor that can be found and copy and paste from<a class="link" href="https://www.tutorialspoint.com/arduino/arduino_ultrasonic_sensor.htm"> Ultrasonic sensor basic setup steps</a> and <a class="link" href="https://www.instructables.com/Arduino-Servo-Motors/">Servo Motor basic setup steps</a>.</div>
+    <img src="img/Artificial%20Eye%20img/p12.png" alt="p12" width="683" height="826">
+    <img src="img/Artificial%20Eye%20img/p13.png" alt="p13" width="683" height="212">
+    <div>The code below shows the condition statement logic that allows the servo motor to react based on the different distances from the feedback of the ultrasonic sensor.</div>
+    <img src="img/Artificial%20Eye%20img/p14.png" alt="p14" width="683" height="476">
+    <div>After this step, the code should be ready to use.</div>
+    <div class="text_stepheadings">Step 5: Upload the code to the Arduino UNO Controller Board</div>
+    <div>Connect the controller board to the computer using the USB cable then verify and upload the code to the controller board with Arduino IDE as shown in the images below.</div>
+    <img src="img/Artificial%20Eye%20img/p15.jpg" alt="p15" width="666" height="400">
+    <img src="img/Artificial%20Eye%20img/p16.jpg" alt="p16" width="666" height="400">
+    <div>Now the <i>Artificial Eye</i> should work as expected.</div>
+    <div class="text_stepheadings">Step 6: Installation to Physical Items</div>
+    <div>We can now make some physical items that could make this prototype easier to use as shown in the images below. The containers that contain the ultrasonic sensor and the boards will make them easier to handle and carry around as well as protection. Then by putting the servo motor inside the wrist band and wearing it on the wrist or hand would provide a vivid vibration sensation to the user. Using these physical items, the mobilization, usability, flexibility and soundness of the prototype can be improved.</div>
+    <img src="img/Artificial%20Eye%20img/p17.jpg" alt="p17" width="666" height="400">
+    <div class="text_subheadings">Future Works</div>
+    <div>By following the steps above, you should be able to replicate the Artificial Eye prototype that works exactly like the one I have described previously. However, due to limitations to the part on hand, this prototype is not the best solution for the desired function. There are a lot of improvements that could be made. For example, the servo motor can be replaced by a vibration motor to increase the vibration efficiency. Also we could add a sound module to increase the accuracy for the user to recognize the change in distance. Furthermore, we can replace the ultrasonic sensor with an IR sensor to increase the accuracy of measured distance, increase the range it can measure and also reduce the feedback time intervals. As well there are many improvements that can be made on coding. With this prototype as the foundation, I wish someday in future a complete product can be created that could change the lives for visually impaired people and also change the world no matter how subtle the changes are.</div>
+    <div class="text_subheadings">Video Description of The Artificial Eye</div>
+    <video controls="controls" width="888" height="600" src="video/Project-Artificial%20Eye_Zhicheng(Sam)%20Huang.mp4">Your browser does not support this Video.</video>
+
+    <div class="text_subheadings">Reference</div>
+    <ul class="list_items">
+        <li>Ultrasonic sensor basic setup steps: <a class="link" href="https://www.tutorialspoint.com/arduino/arduino_ultrasonic_sensor.htm">https://www.tutorialspoint.com/arduino/arduino_ultrasonic_sensor.htm</a></li>
+        <li>Servo Motor basic setup steps: <a class="link" href="https://www.instructables.com/Arduino-Servo-Motors/">https://www.instructables.com/Arduino-Servo-Motors/</a></li>
+        <li>National Library of Medicine: Making Eye Health a Population Health Imperative: Vision for Tomorrow: 3 The impact of vision loss [Sep. 15, 2016].<a class="link" href="https://www.ncbi.nlm.nih.gov/books/NBK402367/#">https://www.ncbi.nlm.nih.gov/books/NBK402367/#</a></li>
+        <li>Kempen GI, Ballemans J, Ranchor AV, van Rens GH, Zijlstra GA. The impact of low vision on activities of daily living, symptoms of depression, feelings of anxiety and social support in community-living older adults seeking vision rehabilitation services. Quality of Life Research. 2012;21(8):1405–1411. [<a class="link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3438403/">OMC free article</a>][<a class="link" href="https://pubmed.ncbi.nlm.nih.gov/22090173/">PubMed</a>]</li>
+    </ul>
+</div>
+<script src="css&js/general.js"></script>
+</body>
+</html>

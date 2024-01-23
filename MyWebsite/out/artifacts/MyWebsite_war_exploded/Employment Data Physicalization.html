@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project: Employment Data Physicalization</title>
+    <style>
+        @import "./css&js/general.css";
+    </style>
+    <link rel="stylesheet" href="css&js/general.css">
+</head>
+<body>
+<button id="back-to-top">Back to Top</button>
+<div style="clear: both; display: flex; padding: 0; margin: 0; border: none">
+    <div style="width: 20%">
+        <img content="logo" src="img/img_placeholder.png" alt="placeholder" style="width: 100%" height="200">
+    </div>
+    <div style="width: 80%">
+        <img content="mydesign" src="img/img_placeholder.png" alt="placeholder" style="width: 100%" height="200">
+    </div>
+</div>
+
+<div class="navitem">
+    <ul class="nav">
+        <li><a href="HomePage.html">Home</a></li>
+        <li><a href="Project Website.html">My Website</a></li>
+        <li><a href="Artificial Eye.html">Artificial Eye</a></li>
+        <li class="nav-active"><a href="Employment Data Physicalization.html">Employment Data Physicalization</a></li>
+        <li><a href="Music 101.html">Music 101</a></li>
+        <li><a href="Party Finder.html">Party Finder</a></li>
+    </ul>
+</div>
+
+<div class="border_layout">
+    <div class="text_headings">Project: Employment Data Physicalization</div>
+    <div class="text_subheadings">Aim and Purpose</div>
+    <div>To visually represent the employed population growth rates of different time periods using a tangible medium. By creating a physical representation of the data, it could help people better understand and engage with the information, also it is a way to create a more memorable and impactful way of conveying the data. This physicalization can also highlight patterns or trends in the data, or draw attention to particular time periods or geographic areas where the growth rates were particularly high or low. Additionally, this physicalization could be used to facilitate discussion and analysis of the data, either by individuals or groups, in order to gain deeper insights and understanding about the employed population growth rates in the different time periods.The data set can be downloaded directly from https://www2.gov.bc.ca/gov/content/data/statistics/employment-labour/labour-market-statistics the second link under the heading Annual Average on the web page. It requires the ability to access .xls files in order to open the downloaded data set.</div>
+    <div class="text_subheadings">Dataset Modification</div>
+    <div>This is the modification of the original dataset to show the employed population growth rate in percentage of each year intervals.</div>
+    <img src="img/Employment%20Data%20Physicalization%20img/p1.png" alt="p1" width="600" height="400">
+    <div class="text_subheadings">Motivation</div>
+    <div>The motivation of this physicalization is to help people understand the data more easily and to inspire creativity in relation to the data. As a creativity support tool, this physicalization could help people in a specific creative task such as identifying areas for future research related to employment growth. For example, it could help people identify regions or time periods where there was a significant change in employment growth rate compared to other regions or time periods. By using colors or shapes to represent different regions and LED lights of different colors represent change in the growth rate, people could easily see where the most significant changes occurred. This could be particularly useful for researchers who are trying to identify factors that contribute to employment growth or decline. By using this physicalization as a tool to visualize the data, they may be able to identify regions or time periods where additional research is needed to better understand the factors contributing to employment growth. In addition, this physicalization could also be used as a tool for brainstorming or generating new ideas related to employment growth. Overall, this interactable physicalization could be used as a CST to help people, especially policy makers and researchers, in their works by helping them brainstorm and giving them more creative ideas. By interacting with this CST, people can look at the dataset from different angles thus increasing their creativity to conduct further research about this dataset.</div>
+    <div class="text_subheadings">How Does This Physicalization Work</div>
+    <div>The interactable physicalization of the employed population growth rate dataset allows users to interact with the physicalization by using an IR remote control. The physicalization consists of a 2D map model of British Columbia, which is divided into three regions. Each region has three LED lights that correspond to the growth rate of the employed population in that region. The LED lights change color based on the growth rate of the employed population in that region, with red indicating a growth rate of above 7%, yellow indicating a growth rate between 0% and 7%, and green indicating a negative growth rate.</div>
+    <div>To interact with the physicalization, users can press buttons on an IR remote control. Pressing button 1 on the remote control will display the growth rate of the employed population from 1995 to 2000. Pressing button 2 will display the growth rate of the employed population from 2000 to 2005. Pressing button 3 will display the growth rate of the employed population from 2005 to 2010. Pressing button 4 will display the growth rate of the employed population from 2010 to 2015. Pressing button 5 will display the growth rate of the employed population from 2015 to 2020. British Columbia is divided into three big regions, Vancouver Island/Coast & Mainland/Southwest, Thompson/Okanagan & Kootenay, Cariboo & Nechako & Northeast.</div>
+    <div>When a user presses a button on the IR remote control, the corresponding LED lights will light up on the 2D map model of British Columbia, indicating the growth rate of the employed population in that region for the selected time period. If a user presses any other button on the remote control, a message will be displayed on the physicalization, indicating that the wrong button was pressed and asking the user to re-enter their selection.</div>
+    <div>This interactable physicalization provides a hands-on, visual and interactive way for users to explore and understand the employed population growth rate dataset. It allows users to quickly and easily see the growth rate of the employed population in different regions of British Columbia for different time periods, and to compare and contrast the growth rates between different regions and time periods. It is also a fun and engaging way to learn about data and to stimulate curiosity and interest in the topic of employment growth.</div>
+    <div class="text_subheadings">Building This Project</div>
+    <div>The following parts should be prepared in advance</div>
+    <ul class="list_items">
+        <li>UNO R3 Controller Board  x2</li>
+        <li>USB Cable x2</li>
+        <li>LED X9</li>
+        <li>IR Remote Control x1</li>
+        <li>IR Receiver Module</li>
+        <li>LCD 1602 Module x1</li>
+        <li>Potentiometer 10K x1</li>
+        <li>830 Tie-Point Breadboard x2</li>
+        <li>Female-to-Male DuPont Wire x32</li>
+        <li>Breadboard Jumper Wire x39</li>
+        <li>9V Battery with Snap-on Connector Clip x2</li>
+        <li>100 Ohm Resistor x10</li>
+    </ul>
+    <div class="text_stepheadings">Step1: Add the LCD Screen and a Potentiometer to Your Circuit</div>
+    <img src="img/Employment%20Data%20Physicalization%20img/p2.png" alt="p2" width="600" height="400">
+    <ul class="list_steps">
+        <li>Connect 5V of Uno board to any spot on the + line of Breadboard</li>
+        <li>Connect GND of Uno board to any spot on the – line of Breadboard</li>
+        <li>Connect the spot says A of the LED to a resistor.</li>
+        <li>Connect the other end of the resistor to 5V (VCC) on the breadboard using a red wire.</li>
+        <li>Connect the spot K of the LED to ground (GND) on the breadboard using a black wire.</li>
+        <li>Connect the contrast (V0) pin on the LED display to a potentiometer.</li>
+        <li>Connect the R5 pin on the LED display to analog pin 5 (A1) on the UNO R3 controller board.</li>
+        <li>Connect the Enable (E) pin on the LED display to analog pin 4 (A0) on the UNO R3 controller board.</li>
+        <li>Connect the DB4 pin on the LED display to digital pin 6 on the UNO R3 controller board.</li>
+        <li>Connect the DB5 pin on the LED display to digital pin 7 on the UNO R3 controller board.</li>
+        <li>Connect the DB6 pin on the LED display to digital pin 8 on the UNO R3 controller board.</li>
+        <li>Connect the DB7 pin on the LED display to digital pin 9 on the UNO R3 controller board.</li>
+        <li>Connect the GND pin on the LED display to ground (GND) on the breadboard using a black wire.</li>
+        <li>Connect the ACC pin on the LED display to 5V (VCC) on the breadboard using a red wire.</li>
+        <li>Connect one terminal of the potentiometer to 5V (VCC) using a red wire.</li>
+        <li>Connect the other terminal of the potentiometer to ground (GND) using a black wire.</li>
+        <li>Connect the middle terminal of the potentiometer to A2 on the UNO R3 controller board using a purple wire.</li>
+    </ul>
+    <div class="text_stepheadings">Step 2: Build Connection Between Two Arduino Uno Controller Boards</div>
+    <img src="img/Employment%20Data%20Physicalization%20img/p3.png" alt="p3" width="600" height="400">
+    <ul class="list_steps">
+        <li>Connect register A4 and A5 of Master Uno Controller Board (left) to register A4 and A5 of Slave Uno Controller Board (right) respectively.</li>
+        <li>Connect the GND of the Master Board and the Slave Board since we are using a separate power supply here.</li>
+    </ul>
+    <div class="text_stepheadings">Step 3: Connect the IR Receiver Module</div>
+    <img src="img/Employment%20Data%20Physicalization%20img/p4.png" alt="p4" width="600" height="400">
+    <ul class="list_steps">
+        <li>Connect G of IR Receiver Module to Breadboard Ground.</li>
+        <li>Connect R of IR Receiver Module to Breadboard Power.</li>
+        <li>Connect Y of IR Receiver Module to Master Uno Board register 13.</li>
+    </ul>
+    <div class="text_stepheadings">Step 4: Connect the LED Light Bulbs with Resistors</div>
+    <img src="img/Employment%20Data%20Physicalization%20img/p5.png" alt="p5" width="600" height="400">
+    <ul class="list_steps">
+        <li>Connect the longer leg of the first red LED to the resistor, then connect the other end of the resistor to Master Uno Board register 12.</li>
+        <li>Connect the shorter leg of the first red LED to Breadboard Ground.</li>
+        <li>Connect the longer leg of the first yellow LED to the resistor, then connect the other end of the resistor to Master Uno Board register 11.</li>
+        <li>Connect the shorter leg of the first yellow LED to Breadboard Ground.</li>
+        <li>Connect the longer leg of the first green LED to the resistor, then connect the other end of the resistor to Master Uno Board register 10.</li>
+        <li>Connect the shorter leg of the first green LED to Breadboard Ground.</li>
+        <li>Connect the longer leg of the second red LED to the resistor, then connect the other end of the resistor to Master Uno Board register 9.</li>
+        <li>Connect the shorter leg of the second red LED to Breadboard Ground.</li>
+        <li>Connect the longer leg of the second yellow LED to the resistor, then connect the other end of the resistor to Master Uno Board register 8.</li>
+        <li>Connect the shorter leg of the second yellow LED to Breadboard Ground.</li>
+        <li>Connect the longer leg of the second green LED to the resistor, then connect the other end of the resistor to Master Uno Board register 7.</li>
+        <li>Connect the shorter leg of the second green LED to Breadboard Ground.</li>
+        <li>Connect the longer leg of the third red LED to the resistor, then connect the other end of the resistor to Master Uno Board register 6.</li>
+        <li>Connect the shorter leg of the third red LED to Breadboard Ground.</li>
+        <li>Connect the longer leg of the third yellow LED to the resistor, then connect the other end of the resistor to Master Uno Board register 5.</li>
+        <li>Connect the shorter leg of the third yellow LED to Breadboard Ground.</li>
+        <li>Connect the longer leg of the third green LED to the resistor, then connect the other end of the resistor to Master Uno Board register 4.</li>
+        <li>Connect the shorter leg of the third green LED to Breadboard Ground. </li>
+    </ul>
+    <div class="text_stepheadings">Step 5: Coding</div>
+    <div>You can access the code for the Master Uno Controller board by clicking <a class="link" href="https://docs.google.com/document/d/17OauaHMGNMPFX0leT5ZxcVBTrRPRTdtZhInluxj9hjs/edit">Master Code</a>.</div>
+    <div>You can access the code for the Slave Uno Controller board by clicking <a class="link" href="https://docs.google.com/document/d/1ylqj68FV6zDAEpvbBic7fyl-jWdUH-X9_ebzTy6sWj4/edit">Slave Code</a>.</div>
+    <div>In case the links do not work, the images below also show the entire code of this project.</div>
+    <div class="text_stepheadings">MASTER CODE:</div>
+    <img src="img/Employment%20Data%20Physicalization%20img/p6.png" alt="p6" width="800" height="600">
+    <img src="img/Employment%20Data%20Physicalization%20img/p7.png" alt="p7" width="800" height="500">
+    <img src="img/Employment%20Data%20Physicalization%20img/p8.png" alt="p8" width="800" height="900">
+    <img src="img/Employment%20Data%20Physicalization%20img/p9.png" alt="p9" width="800" height="600">
+    <img src="img/Employment%20Data%20Physicalization%20img/p10.png" alt="p10" width="800" height="600">
+    <img src="img/Employment%20Data%20Physicalization%20img/p11.png" alt="p11" width="800" height="500">
+    <div class="text_stepheadings">SLAVE CODE:</div>
+    <img src="img/Employment%20Data%20Physicalization%20img/p12.png" alt="p12" width="800" height="900">
+    <img src="img/Employment%20Data%20Physicalization%20img/p13.png" alt="p13" width="800" height="400">
+    <img src="img/Employment%20Data%20Physicalization%20img/p14.png" alt="p14" width="800" height="800">
+    <div class="text_stepheadings">Step 6: Upload the code to the Arduino UNO Controller Board</div>
+    <div>Connect the controller board to the computer using the USB cable then verify and upload the code to the controller board with Arduino IDE. Then use the IR Remote Control to interact with the physicalization to see different data.</div>
+    <img src="img/Employment%20Data%20Physicalization%20img/p15.png" alt="p15" width="800" height="600">
+    <div>This project should work as expected now.</div>
+    <div class="text_stepheadings">Step 7: Installation to 3D printed and Handcrafted Objects</div>
+    <div>Following images demonstrate the implementation of the circuit with the handcrafted box and 3D printed map of British Columbia.</div>
+    <div style="clear: both; display: table">
+        <div style="padding: 5px; float: left; width: 50%">
+            <img src="img/Employment%20Data%20Physicalization%20img/p16.jpg" alt="p16" width="350" height="500">
+        </div>
+        <div style="padding: 5px; float: left; width: 45%">
+            <img src="img/Employment%20Data%20Physicalization%20img/p17.jpg" alt="p17" width="350" height="500">
+        </div>
+    </div>
+    <div class="text_subheadings">Future Works</div>
+    <div>Some future works may include:</div>
+    <ul class="list_items">
+        <li>Test the physicalization with users: To evaluate how effective this physicalization is at conveying information and supporting creativity, it could be helpful to conduct user testing with a diverse group of participants. This could involve observing how people interact with the physicalization, asking them questions about the information it presents, and soliciting feedback on how it could be improved.</li>
+        <li>Incorporate additional data: If additional data becomes available in the future, it could be incorporated into the physicalization to provide a more comprehensive view of employment trends in British Columbia. For example, data on specific industries or occupations could be added to the map to help viewers understand where employment growth is happening within the province.</li>
+        <li>Explore other data visualizations: While the physicalization described here uses a 2D map and LED lights to convey information, there are many other ways to visualize data physically. For example, the data could be represented using physical objects (such as a set of stacked blocks) or using different materials to represent different growth rates. Exploring these other approaches could help identify additional ways to convey complex information in a tangible, interactive way.</li>
+    </ul>
+    <div>TIPs:</div>
+    <ul class="list_items">
+        <li>To turn on the LED screen, use a potentiometer. Adjust the potentiometer to turn up the LED screen. Once the LED screen is turned on, you should see the text print out.</li>
+        <li>Use Female-to-Male DuPont Wires to extend the LEDs, IR Receiver Module, Potentiometer and the LCD1602 Module.</li>
+    </ul>
+
+    <video controls="controls" src="video/Project%20Employment%20Data%20Physicalization%20Video%20Description.mp4" width="300" height="500">Your browser does not support this Video.</video>
+
+    <div class="text_subheadings">Reference</div>
+    <ul class="list_items">
+        <li>Communicate between Arduino Unos: <a class="link" href="https://www.youtube.com/watch?v=NVWJ_FiP0ZI">https://www.youtube.com/watch?v=NVWJ_FiP0ZI</a></li>
+        <li><a class="link" href="https://www.instructables.com/I2C-between-Arduinos/">https://www.instructables.com/I2C-between-Arduinos/</a></li>
+        <li><a class="link" href="https://stackoverflow.com/questions/62363122/how-to-transfer-an-integer-from-an-arduino-to-another-arduino#:~:text=One%20or%20multiple%20bytes%20can,GND%20pins%20of%20the%20two">https://stackoverflow.com/questions/62363122/how-to-transfer-an-integer-from-an-arduino-to-another-arduino#:~:text=One%20or%20multiple%20bytes%20can,GND%20pins%20of%20the%20two</a></li>
+        <li>IR sensor & remote control set up: <a class="link" href="https://roboticsbackend.com/arduino-ir-remote-controller-tutorial-setup-and-map-buttons/">https://roboticsbackend.com/arduino-ir-remote-controller-tutorial-setup-and-map-buttons/</a></li>
+        <li>Dataset: <a class="link" href="https://www2.gov.bc.ca/gov/content/data/statistics/employment-labour/labour-market-statistics">https://www2.gov.bc.ca/gov/content/data/statistics/employment-labour/labour-market-statistics</a></li>
+    </ul>
+
+    <div class="text_subheadings">TeamWork Document</div>
+    <div>ZHICHENG(SAM) HUANG</div>
+    <ul class="list_items">
+        <li>3D print job</li>
+        <li>Make video</li>
+        <li>Project document</li>
+        <li>Craft physical objects</li>
+        <li>Modification and calculation of the original dataset</li>
+        <li>Coded the IR receiver module and IR remote control</li>
+        <li>Edited the code for LED lights and LCD screen base on the dataset</li>
+        <li>Coded and build the circuit for communication between two Arduino Unos</li>
+    </ul>
+    <div>SHAN(NORMAN) JIANG</div>
+    <ul class="list_items">
+        <li>Project document</li>
+        <li>Build the circuit for IR receiver module</li>
+        <li>Coded and build the circuit for the LED lights</li>
+        <li>Modification and calculation of the original dataset</li>
+        <li>Build the circuit for Potentiometer and LCD1602 screen</li>
+    </ul>
+</div>
+<script src="css&js/general.js"></script>
+</body>
+</html>

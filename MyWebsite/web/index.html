@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RequestAccess</title>
+    <style>
+        * {
+            margin: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url("img/access_code.jpg") no-repeat top;
+            padding-top: 25px;
+        }
+
+        .hp_layout {
+            width: 33%;
+            height: auto;
+            border: 10px solid #000000;
+            //margin-top: 150px;
+            //margin-left: 800px;
+            margin: 150px auto 800px;
+            background: url("img/Solid Plum, Dark Purple background.jpg") no-repeat center/100%;
+        }
+
+        .hp_up {
+            /*border: 1px solid red;*/
+            float: top;
+            margin: 20px;
+        }
+
+        .hp_up > p:first-child {
+            color: #CCCC00;
+            font-size: 32px;
+            margin-left: 30px;
+        }
+
+        .hp_up > div:last-child {
+            color: #999900;
+            font-size: 20px;
+            margin-left: 240px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="hp_layout">
+    <div class="hp_up">
+        <p>Welcome to Zhicheng(Sam) Huang's Personal Website</p>
+        <div>
+            <label for="accessCode">Please Enter Access Code</label>
+            <div></div>
+            <form action="/MyWebsite/Verification" method="post">
+                <input type="password" name="accessCode" id="accessCode" placeholder="access code">
+                <div></div>
+                <input type="submit" id="sub_btn" value="Confirm">
+            </form>
+        </div>
+    </div>
+
+
+
+</div>
+</body>
+</html>
